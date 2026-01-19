@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ASG 1</title>
+
+    <script src="asg1.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+
+
+    <!-- Load external libraries -->
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <p id="numdot"> XXX </p> 
+    </br>
+    <!-- Draw button -->
+    <button type="button" id="clearButton">Clear Canvas</button></br></br>
+    <button type="button" id="loadImageButton">Load Drawing</button>
+    <br>
+    Drawing Mode: 
+    <br>
+    <button type="button" id="pointButton" >Squares</button>
+    <button type="button" id="TrianglesButton" >Triangles</button>
+    <button type="button" id="CirclesButton" >Circles</button></br></br>
+
+    <div>
+      Shape Color: 
+      <br>
+      Red <input type="range" min="0" max="100" value="50" class="slider" id="redSlide">
+      Green <input type="range" min="0" max="100" value="50" class="slider" id="greenSlide">
+      Blue <input type="range" min="0" max="100" value="50" class="slider" id="blueSlide"></br></br>
+
+      Shape Size: <input type="range" min="5" max="40" value="5" class="slider" id="sizeSlide">
+
+      (Circles) Segment Count: <input type="range" min="5" max="40" value="5" class="slider" id="segmentSlide">
+    </div>
+
+  </body>
+  <figure>
+  <img src="drawing.jpg" alt="EP" width="600" height="600">
+  <figcaption>EP</figcaption>
+  </figure>
+
+  <figure>
+  <img src="draw2.png" alt="EP" width="600" height="800">
+  <figcaption>EP</figcaption>
+  </figure>
+
+</html>
